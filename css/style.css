@@ -1,0 +1,42 @@
+body {
+    font-family: Inter, sans-serif;
+    color: #1f2937;
+    background-color: white;
+    line-height: 1.6;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Merriweather", Georgia, "Times New Roman", serif;
+  line-height: 1.25;
+  letter-spacing: 0.01em;   
+}
+h1, h2, h3 { font-weight: 700; }
+h4, h5, h6 { font-weight: 600; }
+
+.navbar-brand {
+    font-size: 1.125rem;
+}
+.nav .nav-link{
+    color:#4b5563;
+    text-decoration: none;
+}
+.nav .nav-link:hover, .nav .nav-link:focus {
+  color: #0d6efd;            
+  text-decoration: none;
+}
+.nav .nav-link.active {
+    color: #0d6efd;
+    border-bottom: 2px solid currentColor;
+    padding-bottom: .125rem; 
+}
+.section{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.side-footer{
+    border-top: 1px solid;
+    color: #e6e8ed;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: white;
+    color: #e8ebf0
+}
