@@ -2,7 +2,7 @@
 
 ## Access method
 The site is hosted publicly at:  
-[https://kiriakostsourekas.github.io/mysite/](https://kiriakostsourekas.github.io/mysite/)  
+[https://kiriakostsourekas.github.io/mysite/](https://kiriakostsourekas-wq.github.io/mysite/)  
 
 
 ---
