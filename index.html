@@ -1,17 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- 1) (Optional but recommended) Google Fonts for our pairing: serif (Merriweather) + sans (Inter) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
-
-    <!-- 2) Bootstrap (load FIRST so your styles can override it) -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-
-    <!-- 3) Your own stylesheet (load AFTER Bootstrap to override it) -->
     <link rel="stylesheet" href="css/style.css">
-
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,29 +14,146 @@
 </head>
 <body>
     <header>
-        <nav class = "py-3 border-bottom">
+        <nav class="site-nav border-bottom py-3">
             <div class= "container d-flex align-items-center">
-                <a href="index.html" class="navbar-brand fw-semibold">Kyriakos Tsourekas</a>
+                <a href="#home" class="navbar-brand fw-semibold">Kyriakos Tsourekas</a>
                 <ul class = "nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
+                        <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="projects.html">Projects</a>
+                        <a class="nav-link" href="#accolades">Accolades</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
-    <main class="container py-5">
-        <p class="lead">I am Kyriakos Tsourekas, an ambitious student who wants to learn new things every day.</p>
+    <main class="py-5">
+        <section id="home" class="section">
+            <div class="container">
+                <p class="lead">I am Kyriakos Tsourekas, an ambitious student who wants to learn new things every day.</p>
+            </div>
+        </section>
+        <section id = "about" class="section">
+            <div class="container">
+                <h3 class="mb-3">About me</h3>
+                <div class="row align-items-start g-5">
+                    <div class="col-md-4">
+                        <figure class="profile-card rounded-4 shadow-sm">
+                            <img src="img/IMG_4890.JPG" alt="Kyriakos Tsourekas portrait" class="w-100 rounded-4 object-cover" style="aspect-ratio: 1/1;">
+                        </figure>
+                    </div>
+                    <div class="col-md-8">
+                        <p class="lead mb-4">I am currently studying AI engineering in MBZUAI. I represented Greece in various mathematics competitions, including IMO (1 gold medal, 1 silver medal) BMO (1 silver 1 bronze megal). I am also interested in ML and CS, I am trying to learn as many things as possible, aiming in an AI breakthrough. Oh and also I like parties!</p>
+                        <div class="skills-pills">
+                            <h4 class="h5 mb-3">Skills</h4>
+                            <ul class="skill-pills">
+                                <li>Python</li>
+                                <li>C++</li>
+                                <li>Olympiad Math Contestant<span class="muted">• IMO gold, silver, BMO medals</span></li>
+                                <li>Math Olympiad Coach<span class="muted">• Students with olympic medals</span></li>
+                                <li>Chess <span class="muted">• Greek School champion 2018</span></li>
+                                <li>HTML/CSS</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id = "projects" class="section">
+            <div class="container">
+                <h1 class="mb-3">Projects</h1>
+                <p class="mb-4">A few things I've built recently.</p>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card h-100 shadow-sm rounded-4">
+                            <div class="ratio ratio-16x9 bg-light rounded-top-4" aria-label="Project 2 Screenshot">
+                                <img class="card-img-top" src="img/POI Managenent System.png" alt="Screenshot of Project Title" loading="lazy">
+                            </div>
+                            <div class="card-body">
+                            <h2 class="h5 card-title mb-2">POI Management System</h2>
+                            <p class="card-text">A POI management system can store information about POIs and also information about visitors. A user may interact with this application using a simple text-based menu. Built in pycharm, entirely by myself.</p>
+                                <div class="d-flex gap-2 mb-2">
+                                    <span class="badge text-bg-light border">Python</span>
+                                    <span class="badge text-bg-light border">json</span>
+                                </div>
+                            </div>                               
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card h-100 shadow-sm rounded-4">
+                            <div class="ratio ratio-16x9 bg-light rounded-top-4" aria-label="Project 1 iscreenshot">
+                                <img class="card-img-top" src="img/CreatingMyWebsite.png" alt="Screenshot of Project Title" loading="lazy">
+                            </div>
+                            <div class="card-body">
+                            <h2 class="h5 card-title mb-2">Creating my own Website</h2>
+                            <p class="card-text">The purpose of this project was to use HTML and CSS to create a personal website. Built by myself in vscode.</p>
+                                <div class="d-flex gap-2 mb-2">
+                                    <span class="badge text-bg-light border">HTML</span>
+                                    <span class="badge text-bg-light border">CSS</span>
+                                </div>
+                            </div>                               
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id = "accolades" class = "section">
+            <div class="container">
+                <h1 class="mb-4">Accolades</h1>
+                <p class="mb-4">A selection of awards or accomplishments I've achieved over the past few years</p>
+                <ul class="accolades-list">
+                    <li class="accolade">
+                        <img src="img/IMO_2024.png" alt="IMO medal photo" loading="lazy">
+                        <div class="accolade-body">
+                            <h3 class="h5 mb-1">International Mathematical Olympiad 2024, Bath — Gold Medal</h3>
+                            <p class="mb-2">Represented Greece at the IMO; awarded Gold medal and became the youngest Greek to ever do it.</p>
+                            <div class="small">
+                                <a href="https://www.imo-official.org/team_r.aspx?code=HEL&year=2024&column=total&order=desc&gender=hide" target="_blank" rel="noopener">Official results</a>
+                                <a href="https://en.protothema.gr/2024/07/31/mathematical-olympiad-kyriakos-tsourekas-wins-gold-at-the-65th-international-mathematical-olympiad-2024/" target="_blank" rel="noopener">Media coverage</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="accolade">
+                        <img src="img/IMO_2025.png" alt="IMO medal photo" loading="lazy">
+                        <div class="accolade-body">
+                            <h3 class="h5 mb-1">International Mathematical Olympiad 2025, Australia — Silver Medal</h3>
+                            <p class="mb-2">Represented Greece at the IMO; awarded Gold medal.</p>
+                            <div class="small">
+                                <a href="https://www.imo-official.org/team_r.aspx?code=HEL&year=2025" target="_blank" rel="noopener">Official results</a>
+                                <a href="https://en.protothema.gr/2025/07/23/kyriakos-tsourekas-wins-silver-at-the-66th-international-mathematical-olympiad-1st-in-the-greek-delegation/" target="_blank" rel="noopener">Media coverage</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="accolade">
+                        <img src="img/BMO_2025.png" alt="BMO silver medal photo" loading="lazy">
+                        <div class="accolade-body">
+                            <h3 class="h5 mb-1">Balkan Mathematical Olympiad 2025, Sarajevo — Silver Medal</h3>
+                            <p class="mb-2">Silver medal at BMO; national team member.</p>
+                            <div class="small">
+                                <a href="https://bmo2025.pmf.unsa.ba/wp-content/uploads/2025/04/BMO2025-Official-Results.pdf" target="_blank" rel="noopener">Official results</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="accolade">
+                        <img src="img/university-award.jpg" alt="University award photo" loading="lazy">
+                        <div class="accolade-body">
+                            <h3 class="h5 mb-1">Accepted at MBZUAI -BCs of Science and AI</h3>
+                            <p class="mb-2">Awarded for AI studies.</p>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
-    <footer class="site-footer py-3 border-top">
+    <footer class="side-footer py-3 border-top">
         <div class="container d-flex align-items-center justify-content-between">
-            <small>© 2025 Kyriakos Tsourekas</small>
+            <small>Kyriakos Tsourekas</small>
             <ul class="nav">
                 <li class="nav-item">
                     <a class="nav-link" href="mailto:Kyriakos.Tsourekas@mbzuai.ac.ae">Email me</a>
