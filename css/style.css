@@ -17,7 +17,7 @@ h4, h5, h6 { font-weight: 600; }
     font-size: 1.125rem;
 }
 .site-nav {
-  background: #0d6efd;             
+  background: #0f55bd;             
   color: #fff;
   box-shadow: 0 1px 0 rgba(0,0,0,.04);
 }
@@ -76,7 +76,7 @@ h4, h5, h6 { font-weight: 600; }
   font-weight: 400;
 }
 .side-footer {
-  background-color: #0d6efd;
+  background-color: #0f55bd;
   color: #fff;
   border-top: 0;                   
   padding-top: 1rem;
@@ -116,14 +116,5 @@ h4, h5, h6 { font-weight: 600; }
 .accolade-body a {
   text-decoration: underline;
   text-underline-offset: 2px;
-}
-@media (max-width: 576px) {
-  .accolade {
-    grid-template-columns: 1fr;
-  }
-  .accolade img {
-    width: 100%;
-    height: 180px;
-  }
 }
 .object-cover { object-fit: cover; display: block; }
